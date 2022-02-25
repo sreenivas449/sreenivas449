@@ -16,7 +16,7 @@ pipeline{
                 echo "Node name is : ${NODE_NAME}"
                 echo "build id is: ${BUILD_ID}"
                 java -version
-                mvn --version
+                mvn -version
             }
         }
     }
