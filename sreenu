@@ -1,6 +1,11 @@
 pipeline{
     agent any
     
+    //tools {
+  //jdk 'java'
+  //maven 'maven'
+//}
+    
     stages{
         stage('variables'){
             steps{
@@ -10,6 +15,8 @@ pipeline{
                 echo "${JOB_URL}"
                 echo "Node name is : ${NODE_NAME}"
                 echo "build id is: ${BUILD_ID}"
+                java -version
+                mvn --version
             }
         }
     }
