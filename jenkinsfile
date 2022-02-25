@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    
+    stages{
+        stage('variables'){
+            steps{
+                echo "Hi Sreenivas"
+                echo "${BUILD_NUMBER}"
+                echo "${WORKSPACE}"
+                echo "${JOB_URL}"
+                echo "Node name is : ${NODE_NAME}"
+                echo "build id is: ${BUILD_ID}"
+            }
+        }
+    }
+}
