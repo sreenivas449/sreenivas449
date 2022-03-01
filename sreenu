@@ -19,6 +19,7 @@ pipeline{
                 bat "testing branch protection rules"
                 bat "merging branch"
                 bat "${myVariable}"
+                bat echo -n 
             }
         }
     }
