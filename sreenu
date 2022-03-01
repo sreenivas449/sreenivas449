@@ -17,6 +17,7 @@ pipeline{
                 bat 'java -version'
                 bat 'mvn -version'
                 bat "testing branch protection rules"
+                bat "merging branch"
             }
         }
     }
