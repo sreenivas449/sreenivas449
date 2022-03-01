@@ -16,6 +16,7 @@ pipeline{
                 echo "build id is: ${BUILD_ID}"
                 bat 'java -version'
                 bat 'mvn -version'
+                bat "testing branch protection rules"
             }
         }
     }
